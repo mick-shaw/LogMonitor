@@ -3,7 +3,7 @@
 ## Script Name: [Application Monitor]
 ## Created: [05/05/2011]
 ## Author: Mick Shaw
-## Propery of DC Government
+## 
 ##
 ############################################################################
 ## PURPUSE: 
@@ -38,7 +38,7 @@ param(
 
 $logentries,
 ## The recipient of the mail message 
-$notificationfrom = "VPNotifications@dc.gov",
+$notificationfrom = "some_recipient@email.com",
 
 ## The subject of the message 
 $subject = "DB Socket Error VXML Server: $env:COMPUTERNAME", 
@@ -124,7 +124,7 @@ while (!$reader.EndOfStream)
                     {
                         if ($ShowMatchedLines) { $line ; break }  #Break out of foreach, one match good enough.
                         $pattern.count++ 
-                    }     
+                    } 
             }
     }
 
