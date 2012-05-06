@@ -44,13 +44,13 @@ $notificationfrom = "VPNotifications@dc.gov",
 $subject = "DB Socket Error VXML Server: $env:COMPUTERNAME", 
 
 ## The body of the message 
-$body = "All Concerned,`n`n An Application error has been logged in the last 30 minutes. `n`nApp Server $env:COMPUTERNAME was unable to write to the OAG/CSSD Database.  Socket errors have been logged. An attempt to re-establish the connection has been made by restarting the DCGOVAVAYAAppServer service.  Please verify all services.`n",
+$body = "All Concerned,`n`n An Application error has been logged in the last 30 minutes. `n`nApp Server $env:COMPUTERNAME was unable to write to the external Database.  Socket errors have been logged. An attempt to re-establish the connection has been made by restarting the AppServer service.  Please verify all services.`n",
 
 ## The SMTP host that will transmit the message 
-$smtpserver = "smtp4.dc.gov", 
+$smtpserver = "some_smtpservice.smtp.com", 
 
 ## The sender of the message 
-$notificationto = "VPNotifications@dc.gov" 
+$notificationto = "recipient@email.com" 
 #$notificationto = "mshaw@potomacintegration.com" 
 	)
 
