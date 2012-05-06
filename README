@@ -1,0 +1,17 @@
+LogMonitor is a simply powershell script
+
+I'm using it to monitor an IVR application written in
+Avaya's Dialog Designer.  The problem is that periodically
+the ODBC connection drops and is cannot be restablished
+until the tomcat service is restarted.
+
+This wasn't the ideal solution.  However, the IVR application was
+written by AVAYA and I became tired of Avaya saying it wasn't their
+fault.  Since they wouldn't change their code, I wrote this
+script to monitor the tomcat logs and look for the error signature
+that causes the application to stop writting to the external DB.
+
+When a socket error is logged the Application sends an email
+notification of the event and restarts to Tomcat service to
+restablish the ODBC connection.
+
