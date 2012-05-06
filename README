@@ -3,7 +3,7 @@ monitor a log file
 
 I'm using it to monitor an IVR application written in
 Avaya's Dialog Designer.  The problem is that periodically
-the ODBC connection drops and is cannot be restablished
+the ODBC connection drops and cannot be restablished
 until the tomcat service is restarted.
 
 This wasn't the ideal solution.  However, the IVR application was
