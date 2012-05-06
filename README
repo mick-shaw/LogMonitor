@@ -1,4 +1,5 @@
-LogMonitor is a simply powershell script
+LogMonitor is a simple powershell script used to
+monitor a log file
 
 I'm using it to monitor an IVR application written in
 Avaya's Dialog Designer.  The problem is that periodically
